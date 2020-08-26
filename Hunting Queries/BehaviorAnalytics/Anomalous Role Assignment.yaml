@@ -28,4 +28,3 @@ query: |
  ) on $left._ItemId == $right.SourceRecordId
  | where UsersInsights.BlasrRadius == "High" or ActivityInsights.FirstTimeUserPerformedAction == true
  | project TimeGenerated, UserName, UserPrincipalName, UsersInsights, ActivityType, ActionType, ["TargetUser"]=Target,RoleName,ActivityInsights ,SourceIPAddress, SourceIPLocation, SourceDevice, DevicesInsights
- 

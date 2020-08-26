@@ -19,4 +19,3 @@ query: |
  | where ActionType == "InteractiveLogon"
  | where ActivityInsights.FirstTimeUserLoggedOnToDevice == true
  | project TimeGenerated, UserName, UserPrincipalName, UsersInsights, ActivityType, ActionType,ActivityInsights ,SourceIPAddress, SourceIPLocation, SourceDevice, DevicesInsights
- 
